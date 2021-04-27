@@ -1,0 +1,443 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--tab SaS logo-->
+    <link rel="shortcut icon" type="image/png" href="{% static 'SaS.png' %}" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+
+    <title>{% block title %} {% endblock title %}</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar"
+    >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+
+        <a class="navbar-brand ripple " data-mdb-ripple-color="primary" href="#"
+          ><img class="SaS_Logo" src="{% static 'SaS.png' %}"
+        /></a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-dark"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul
+            class="navbar-nav me-auto d-flex flex-coloum align-items-start mt-3 mt-lg-0"
+          >
+            <li class="nav-item text-center mx-2 mx-lg-1">
+              <a
+                class="nav-link active ripple"
+                data-mdb-ripple-color="dark"
+                aria-current="page"
+                href="#!"
+              >
+                <div>
+                  <i class="fas fa-home fa-lg mb-1"></i>
+                </div>
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item dropdown text-center mx-2 mx-lg-1">
+              <a
+                class="nav-link dropdown-toggle ripple"
+                data-mdb-ripple-color="dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div>
+                  <i class="fas fa-phone-laptop mb-1"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger"
+                    >11</span
+                  >
+                </div>
+                Electronics
+              </a>
+              <!-- Dropdown menu -->
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-mobile-alt p-2"></i>Mobile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-desktop p-2"></i>Computer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-laptop p-2"></i>Laptop</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-desktop p-2"></i> Electronics
+                    Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Fashion Dropdown -->
+            <li class="nav-item dropdown text-center mx-2 mx-lg-1">
+              <a
+                class="nav-link dropdown-toggle ripple"
+                data-mdb-ripple-color="dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div>
+                  <i class="fas fa-tshirt mb-1"></i>
+                  <span class="badge rounded-pill badge-notification bg-success"
+                    >11</span
+                  >
+                </div>
+                Fashion
+              </a>
+              <!-- Dropdown menu -->
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-tshirt p-2"></i>T-Shirt</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-clock p-2"></i>Watch</a
+                  >
+                </li>
+
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-gifts p-2"></i>Gifts</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <!-- Right links -->
+          <!-- profile -->
+          <ul
+            class="navbar-nav ms-auto d-flex flex-coloum align-items-start mt-3 mt-lg-0"
+          >
+            <li class="nav-item dropdown text-center mx-2 mx-lg-1 px-2">
+              <a
+                class="nav-link dropdown-toggle ripple"
+                data-mdb-ripple-color="dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div>
+                  <span
+                    class="badge rounded-pill badge-notification bg-dark p-1"
+                    >Hi,Rayhan</span
+                  >
+                </div>
+                <img
+                  src="https://source.unsplash.com/900x900/?human"
+                  class="img-fluid SaS-Profile-Image mx-3"
+                  alt="profile image"
+                />
+              </a>
+              <!-- Dropdown menu -->
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-user p-2"></i>Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="far fa-list-alt p-2"></i>Orders</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="dark"
+                    href="#"
+                    ><i class="fas fa-key p-2"></i>Change Password</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item ripple"
+                    data-mdb-ripple-color="Danger"
+                    href="#"
+                    ><i class="fas fa-sign-out p-2"></i>Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nav-item text-center mx-2 mx-lg-1 ripple"
+              data-mdb-ripple-color="dark"
+            >
+              <a class="nav-link" href="#!">
+                <div>
+                  <i class="fas fa-cart-plus mb-1"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger"
+                    >11</span
+                  >
+                </div>
+                Cart
+              </a>
+            </li>
+            <li
+              class="nav-item text-center mx-2 mx-lg-1 ripple"
+              data-mdb-ripple-color="dark"
+            >
+              <a
+                class="nav-link"
+                href="#!"
+                data-mdb-toggle="modal"
+                data-mdb-target="#loginModal"
+              >
+                <div>
+                  <i class="fas fa-sign-in-alt m-1"></i>
+                </div>
+                Login
+              </a>
+            </li>
+            <li
+              class="nav-item text-center mx-2 mx-lg-1 ripple"
+              data-mdb-ripple-color="dark"
+            >
+              <a
+                class="nav-link"
+                href="#!"
+                data-mdb-toggle="modal"
+                data-mdb-target="#registrationModal"
+              >
+                <div>
+                  <i class="fas fa-user-plus m-1"></i>
+                </div>
+                Registration
+              </a>
+            </li>
+          </ul>
+          <!-- Right links -->
+
+          <!-- Search form -->
+          <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+            <!-- <input
+              type="search"
+              class="form-control light form-white"
+              placeholder="Search"
+              aria-label="Search"
+            /> -->
+            <div class="form-outline form-dark">
+              <input type="text" id="formWhite" class="form-control" />
+              <label class="form-label" for="formWhite">Search</label>
+            </div>
+            <button
+              class="btn btn-dark ripple"
+              type="button"
+              data-mdb-ripple-color="white"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!--Login Modal -->
+    {% include "login.html" %}
+
+    <!--Registration Modal -->
+     {% include "registration.html" %}
+
+
+    {% block body %} {% endblock body %}
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        ©
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+          
+        </script>
+        Copyright:
+        <a class="text-dark" href="#"
+          ><i class="fas fa-snowflake mb-1 p-2"></i><b>SaS E-Commerce</b></a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+    ></script>
+  </body>
+</html>

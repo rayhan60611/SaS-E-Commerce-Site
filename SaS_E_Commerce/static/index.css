@@ -1,0 +1,25 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* .SaS_Logo{
+  height: 44px !important;
+} */
+
+.navbar-brand img {
+  height: 50px !important;
+
+}
+
+.SaS-Profile-Image{
+  height: 30px !important;
+  width:30px !important;
+  border-radius: 50px;
+  border:1px rgb(255, 255, 255) outset;
+}
+
+
+.modal_Logo{
+  height: 45px !important;
+  width: 45px !important;
+}

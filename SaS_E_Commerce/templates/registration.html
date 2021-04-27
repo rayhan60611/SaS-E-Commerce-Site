@@ -1,0 +1,131 @@
+{% load static %}
+<form action="/registration" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+    <div
+      class="modal fade"
+      id="registrationModal"
+      tabindex="-1"
+      aria-labelledby="registrationModalLabel"
+      aria-hidden="true"
+      >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="modal_Logo m-2" src="{% static 'SaS.png' %}" />
+            <h5 class="modal-title" id="registrationModalLabel">
+              SaS Registration
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container px-3">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="first_name"
+                  class="form-control form-control-lg my-3 first_name"
+                  name ="first_name"
+                  required
+                />
+                <label class="form-label" for="first_name">First Name</label>
+              </div>
+
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="last_name"
+                  class="last_name form-control form-control-lg my-3"
+                   name ="last_name"
+                  required
+                />
+                <label class="form-label" for="last_name">Last Name</label>
+              </div>
+
+              <div class="form-outline">
+                <input
+                  type="email"
+                  id="email"
+                  class="email form-control form-control-lg my-3"
+                  name ="email"
+                  required
+                />
+                <label class="form-label" for="email">Email</label>
+              </div>
+
+              <div class="form-outline">
+                <input
+                  type="tel"
+                  id="mobile"
+                  class="form-control form-control-lg my-3"
+                  pattern="^(?:\+?88)?01[15-9]\d{8}$"
+                   name ="mobile"
+                  required
+                />
+                <label class="form-label" for="mobile">Mobile No</label>
+              </div>
+
+              <div class="form-outline">
+                <input
+                  type="file"
+                  class="form-control form-control-lg my-3"
+                  id="image_file"
+                  name ="image"
+                />
+              </div>
+
+              <div class="form-outline">
+                <textarea
+                  class="form-control form-control-lg my-3"
+                  id="user_address"
+                  rows="4"
+                  name ="address"
+                ></textarea>
+                <label class="form-label" for="user_address"
+                  >User Address</label
+                >
+              </div>
+
+              <div class="form-outline">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control form-control-lg my-3"
+                   name ="password"
+                  required
+                />
+                <label class="form-label" for="password">Password</label>
+              </div>
+              <div class="form-outline">
+                <input
+                  type="password"
+                  id="confirm_password"
+                  class="form-control form-control-lg my-3"
+                   name ="confirm_password"
+                  required
+                />
+                <label class="form-label" for="confirm_password"
+                  >Confirm Password</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-mdb-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-dark">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
