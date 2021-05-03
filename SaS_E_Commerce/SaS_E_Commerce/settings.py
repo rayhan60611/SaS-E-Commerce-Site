@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'SaS_EC_App.Registration'
+
 
 # Application definition
 
@@ -79,7 +81,7 @@ WSGI_APPLICATION = 'SaS_E_Commerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'SaS_db',
+        'NAME': 'SaS_db_Main',
         'USER':'postgres',
         'PASSWORD':'admin',
         'HOST':'localhost'

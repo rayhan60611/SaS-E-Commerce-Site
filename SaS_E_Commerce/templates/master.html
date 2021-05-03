@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <!--tab SaS logo-->
     <link rel="shortcut icon" type="image/png" href="{% static 'SaS.png' %}" />
     <!-- Font Awesome -->
@@ -44,7 +50,7 @@
       <div class="container-fluid">
         <!-- Navbar brand -->
 
-        <a class="navbar-brand ripple " data-mdb-ripple-color="primary" href="#"
+        <a class="navbar-brand ripple" data-mdb-ripple-color="primary" href="#"
           ><img class="SaS_Logo" src="{% static 'SaS.png' %}"
         /></a>
 
@@ -349,10 +355,7 @@
     {% include "login.html" %}
 
     <!--Registration Modal -->
-     {% include "registration.html" %}
-
-
-    {% block body %} {% endblock body %}
+    {% include "registration.html" %} {% block body %} {% endblock body %}
 
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Grid container -->
@@ -424,7 +427,6 @@
         ©
         <script type="text/javascript">
           document.write(new Date().getFullYear());
-          
         </script>
         Copyright:
         <a class="text-dark" href="#"
@@ -439,5 +441,7 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
     ></script>
+
+    
   </body>
 </html>
